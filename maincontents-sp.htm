@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="58">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo.png" onclick="FC_ContentsCall('')">
+    </div>
+
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    <h1 class="title">PULSE UN BOTÓN DE ABAJO PARA COMENZAR</h1>
+    <div class="navigation">
+
+      <div class="col-sm-4 navigation-box" style="" onclick="">
+        <div style="">
+          <img src="assets/icons/check-in-marker.png" class="navigation-icon">
+          <h2 class="navigation-text">REGISTRARSE</h2> 
+        </div>
+        
+      </div>
+      
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('')">
+        <div style="">
+          <img src="assets/icons/map.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text" >MAPAS</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('')">
+        <div style="">
+          <img src="assets/icons/consent.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text">FORMAS</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('')">
+        <div style="">
+          <img src="assets/icons/translation.png" class="navigation-icon" style="width:210px">
+          <h2 class="navigation-text">ACCESO AL LENGUAJE</h2>
+        </div>
+      </div>
+
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('')">
+        <div style="">
+          <img src="assets/icons/calendar.png" class="navigation-icon" >
+          <h2 class="navigation-text" style="">CALENDARIO</h2>
+        </div>
+      </div>
+      
+
+      <div class="col-sm-4 navigation-box" style=""  onclick="FC_ContentsCall('')">
+        <div style="" >
+          <img src="assets/icons/question.png" class="navigation-icon" style="width:210px">
+          <h2 class="navigation-text" style="">PREGUNTAS FRECUENTES</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="language-box">
+      <a href="#" class="" onclick="FC_ContentsCall('en')">ENGLISH</a> / <a href="" class="active">ESPAÑOL</a>
+      
+    </div>
+
+  </section>
+<footer>
+  <img src="assets/footer.png">
+  
+</footer>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+  <style type="text/css">
+    nav {
+      height: 0px;
+    }
+    .main-content {
+      height: 1390px;
+      margin-top: 0;
+      padding-top: 65px;
+      background-color: ;
+      border-top: 20px solid #282e3a;
+    }
+    
+    
+  </style>
+
+</body>
+</html>
